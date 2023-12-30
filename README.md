@@ -1,15 +1,19 @@
-<!-- LTeX: enabled=false -->
-# alfred wikipedia suggest
-<!-- LTeX: enabled=true -->
+# Wikipedia Suggest for Alfred
 ![Download count](https://img.shields.io/github/downloads/chrisgrieser/alfred-wikipedia-suggest/total?label=Total%20Downloads&style=plastic)
 ![version number](https://img.shields.io/github/v/release/chrisgrieser/alfred-wikipedia-suggest?label=Latest%20Release&style=plastic)
 
-Inline Suggestion of Wikipedia Entries for Alfred
+Get in-line Wikipedia search suggestions.
 
-- [ ] Showcase image to be inserted here.
+<img alt="showcase" width=70%
+src="https://github.com/chrisgrieser/alfred-wikipedia-suggest/assets/73286100/ec296083-532d-4705-bc93-69eda48c8343">
 
 ## Usage
-- Do {{this}} via the keyword `xxx`.
+Get in-line suggestions from Wikipedia via the `w` keyword.
+- Press <kbd>⏎</kbd> to open the page in the browser.
+- Press <kbd>⌥⏎</kbd> to copy the page URL to the clipboard.
+
+Set the language variant of Wikipedia you want to use in the [Workflow
+Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
 
 ## Installation
 [➡️ Download the latest release.](./releases/latest)
