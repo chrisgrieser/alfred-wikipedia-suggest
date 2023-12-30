@@ -1,10 +1,10 @@
 <!-- LTeX: enabled=false -->
-# {{workflow-name}}
+# alfred wikipedia suggest
 <!-- LTeX: enabled=true -->
-![Download count](https://img.shields.io/github/downloads/chrisgrieser/{{workflow-id}}/total?label=Total%20Downloads&style=plastic)
-![version number](https://img.shields.io/github/v/release/chrisgrieser/{{workflow-id}}?label=Latest%20Release&style=plastic)
+![Download count](https://img.shields.io/github/downloads/chrisgrieser/alfred-wikipedia-suggest/total?label=Total%20Downloads&style=plastic)
+![version number](https://img.shields.io/github/v/release/chrisgrieser/alfred-wikipedia-suggest?label=Latest%20Release&style=plastic)
 
-{{workflow-description}}
+Inline Suggestion of Wikipedia Entries for Alfred
 
 - [ ] Showcase image to be inserted here.
 
