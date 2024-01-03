@@ -16,7 +16,7 @@ Set the language variant of Wikipedia you want to use in the [Workflow
 Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
 
 ## Installation
-[➡️ Download the latest release.](./releases/latest)
+[➡️ Download the latest release.](https://github.com/chrisgrieser/alfred-wikipedia-suggest/releases/latest)
 
 When admitted to the Alfred Gallery, the workflow auto-updates via Alfred's
 workflow-update mechanism.
