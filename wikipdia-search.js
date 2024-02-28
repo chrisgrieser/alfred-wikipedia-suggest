@@ -5,7 +5,10 @@ ObjC.import("stdlib");
 function httpRequest(url) {
 	const queryURL = $.NSURL.URLWithString(url);
 	const requestData = $.NSData.dataWithContentsOfURL(queryURL);
-	const requestString = $.NSString.alloc.initWithDataEncoding(requestData, $.NSUTF8StringEncoding).js;
+	const requestString = $.NSString.alloc.initWithDataEncoding(
+		requestData,
+		$.NSUTF8StringEncoding,
+	).js;
 	return requestString;
 }
 
@@ -35,11 +38,15 @@ function run(argv) {
 		let url = wikipediaItems[3][i];
 
 		if (useWikiwand)
-			url = url.replace(/https:\/\/(\w+)\.wikipedia\.org\/wiki\/(.+)/gm, "https://www.wikiwand.com/$1/$2");
+			url = url.replace(
+				/https:\/\/(\w+)\.wikipedia\.org\/wiki\/(.+)/gm,
+				"https://www.wikiwand.com/$1/$2",
+			);
 
 		wikipediaEntries.push({
 			title: suggestion,
 			subtitle: desc,
+			quicklookurl: url, // used by AlfredExtraPane
 			arg: url,
 		});
 	}
