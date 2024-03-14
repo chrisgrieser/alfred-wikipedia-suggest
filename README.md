@@ -5,10 +5,10 @@
 Get in-line Wikipedia search suggestions.
 
 <img alt="showcase" width=70%
-src="https://github.com/chrisgrieser/alfred-wikipedia-suggest/assets/73286100/ec296083-532d-4705-bc93-69eda48c8343">
+src="https://github.com/chrisgrieser/alfred-wikipedia-suggest/assets/73286100/c4f55b2a-7d4c-4273-8d2e-e5f8d1c3b1ea">
 
 ## Usage
-Get in-line suggestions from Wikipedia via the `w` keyword.
+Get in-line suggestions from Wikipedia via the `wiki` keyword.
 - Press <kbd>⏎</kbd> to open the page in the browser.
 - Press <kbd>⌥⏎</kbd> to copy the page URL to the clipboard.
 
