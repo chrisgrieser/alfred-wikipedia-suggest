@@ -51,5 +51,9 @@ function run(argv) {
 		}
 	}
 
+	// if more than one language, sort by length of title, to prevent the entries
+	// of the 2nd being displayed at the bottom
+	if (langCodes.length > 1) wikiEntries.sort((a, b) => a.title.length - b.title.length);
+
 	return JSON.stringify({ items: wikiEntries });
 }
