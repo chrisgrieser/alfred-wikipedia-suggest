@@ -197,39 +197,20 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 				<key>default</key>
 				<string>en</string>
 				<key>placeholder</key>
-				<string>en</string>
+				<string>en, de</string>
 				<key>required</key>
 				<true/>
 				<key>trim</key>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>The language you want to search Wikipedia in. Use the token from the wikipedia URL, e.g. ‘en’ for the English Wikipedia or ‘de’ for the German one. Seperate multiple tokens with ‘/’, e.g. ‘en/de’.</string>
+			<string>The language you want to search Wikipedia in. Use the token from the Wikipedia URL, e.g., "en" for the English Wikipedia or "de" for the German one. Set multiple languages by separating them with a comma, for instance "en, de". Note that the more languages you select, the slower the search becomes.</string>
 			<key>label</key>
 			<string>Language Code</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
 			<string>language_code</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<false/>
-				<key>required</key>
-				<false/>
-				<key>text</key>
-				<string>Yes</string>
-			</dict>
-			<key>description</key>
-			<string>Directly redirect to Wikiwand (an alternative Wikipedia Skin).</string>
-			<key>label</key>
-			<string>Use Wikiwand</string>
-			<key>type</key>
-			<string>checkbox</string>
-			<key>variable</key>
-			<string>use_wikiwand</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -248,13 +229,32 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string></string>
+			<string>per language</string>
 			<key>label</key>
-			<string>Max Number of Result for Each Language</string>
+			<string>Number of result</string>
 			<key>type</key>
 			<string>slider</string>
 			<key>variable</key>
-			<string>max_number_of_result_for_each_language</string>
+			<string>results_per_language</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>Yes</string>
+			</dict>
+			<key>description</key>
+			<string>Directly redirect to Wikiwand, an alternative Wikipedia Skin.</string>
+			<key>label</key>
+			<string>Use Wikiwand</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>use_wikiwand</string>
 		</dict>
 	</array>
 	<key>version</key>
