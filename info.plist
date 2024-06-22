@@ -204,7 +204,7 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>The Language you want to search wikipedia in. Use the token from the wikipedia URL, e.g. "en" for the English Wikipedia or "de" for the German one.</string>
+			<string>The language you want to search Wikipedia in. Use the token from the wikipedia URL, e.g. ‘en’ for the English Wikipedia or ‘de’ for the German one. Seperate multiple tokens with ‘/’, e.g. ‘en/de’.</string>
 			<key>label</key>
 			<string>Language Code</string>
 			<key>type</key>
@@ -230,6 +230,31 @@ Created by [Chris Grieser](https://chris-grieser.de/).</string>
 			<string>checkbox</string>
 			<key>variable</key>
 			<string>use_wikiwand</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>defaultvalue</key>
+				<integer>9</integer>
+				<key>markercount</key>
+				<integer>15</integer>
+				<key>maxvalue</key>
+				<integer>15</integer>
+				<key>minvalue</key>
+				<integer>1</integer>
+				<key>onlystoponmarkers</key>
+				<true/>
+				<key>showmarkers</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Max Number of Result for Each Language</string>
+			<key>type</key>
+			<string>slider</string>
+			<key>variable</key>
+			<string>max_number_of_result_for_each_language</string>
 		</dict>
 	</array>
 	<key>version</key>
