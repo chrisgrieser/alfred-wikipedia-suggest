@@ -30,7 +30,7 @@ function run(argv) {
 
 	const langCodes = $.getenv("language_code").split(/ *, */);
 	const maxResults = Number($.getenv("results_per_language"));
-	const useWikiwand = $.getenv("use_wikiwand") === "1";
+	const wikiwand = $.getenv("use_wikiwand") === "1";
 
 	// DOCS Wikipedia Open Search API: https://www.mediawiki.org/wiki/API:Opensearch#JavaScript
 	// TEST API Sandbox: https://en.wikipedia.org/wiki/Special:ApiSandbox#action=opensearch&format=json&search=Hampi&namespace=0&limit=10&formatversion=2
@@ -47,8 +47,7 @@ function run(argv) {
 			const desc = wikiItems[2][i]; // often empty
 			let url = wikiItems[3][i];
 
-			if (useWikiwand)
-				url = url.replace(/.*\/wiki\/(.+)/, `https://www.wikiwand.com/${lang}/$1`);
+			if (wikiwand) url = url.replace(/.*\/wiki\/(.+)/, `https://www.wikiwand.com/${lang}/$1`);
 
 			// only show languages if actually more than one
 			const langFlag = langCodes.length > 1 ? langToFlag[lang] || `[${lang}]` : "";
